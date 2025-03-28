@@ -4,7 +4,7 @@ class CuentaBancaria:
     def __init__(self, titular, saldo_inicial=0):
         self.titular = titular
         self.saldo = saldo_inicial
-        self.movimientos = []  # Lista de tuplas: (fecha, tipo, monto, saldo)dddd
+        self.movimientos = []  # Lista de tuplas: (fecha, tipo, monto, saldo)
 
     def depositar(self, monto):
         # Completar lo siguiente: 
@@ -20,8 +20,8 @@ class CuentaBancaria:
 
     def retirar(self, monto):
         # Completar lo siguiente: 
-        if self.saldo < monto:
         # 1. Validar saldo, y si es insuficiente mostrar mensaje
+        if self.saldo < monto:
             print('no hay saldo suficiente')
         # 2. Actualizar saldo
         else:
@@ -50,4 +50,5 @@ class CuentaBancaria:
             print(f'monto: {movimiento[2]}')
             print(f'saldo: {movimiento[3]}')
         pass
+
 
