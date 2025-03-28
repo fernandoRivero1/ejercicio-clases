@@ -4,7 +4,7 @@ class CuentaBancaria:
     def __init__(self, titular, saldo_inicial=0):
         self.titular = titular
         self.saldo = saldo_inicial
-        self.movimientos = []  # Lista de tuplas: (fecha, tipo, monto, saldo)
+        self.movimientos = []  # Lista de tuplas: (fecha, tipo, monto, saldo)dddd
 
     def depositar(self, monto):
         # Completar lo siguiente: 
